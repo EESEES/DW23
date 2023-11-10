@@ -1,0 +1,114 @@
+<!-- flex.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .item:nth-child(1){background: yellow; width: 30%;}
+        .item:nth-child(2){background: red; width: 30%;}
+        .item:nth-child(3){background: blue; width: 30%;}
+        .item:nth-child(4){background: pink; width: 30%;}
+        .item:nth-child(5){background: orange; width: 30%;}
+        .item:nth-child(6){background: green; width: 30%;}
+
+
+        #container1{
+            border:3px solid black;
+            display:flex;
+            width: 300px;
+            height: 100px;
+            justify-content: space-around;
+            align-items:stretch;
+        }
+        #container1 .item{
+            width: 30%;
+        }
+        #container2{
+            width: 300px;
+            height: 100px;
+            border:2px solid black;
+            display: flex;
+            
+            justify-content: space-around;
+            align-items: center;
+        }
+        .a{
+            align-self: stretch;
+        }
+        .b{
+            align-self: center;
+        }
+        #container3{
+            border: 2px solid black;
+            width: 400px;
+            /* height: 100px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: start;
+            row-gap:20px;
+            column-gap: 20px;
+            padding: 20px;
+        }
+        #container4{
+            box-sizing: border-box;
+            border:2px solid black;
+            width: 500px;
+            height: 134px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            row-gap: 10px;
+            column-gap: 10px;
+            padding: 10px;
+        }
+        #container4 .item{
+            height: 30px; width: 49%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <br><br>
+    <div id="container2">
+        <div class="item ">1</div>
+        <div class="item a">2</div>
+        <div class="item b">3</div>
+    </div>
+    <br><br>
+    <div id="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <br><br>
+    <div id="container4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    display:flex;
+     flex가 적용된 태그의 하위태그들을 어떻게 배치할 것인가 설정 할 수 있다.   
+     하위태그들을 크기를 키우거나 줄이거나 위치를 옮기거나 할 수 있다.
+
+     container : display:flex가 적용된 태그를 컨테이너라고 한다.
+     item : 컨테이너의 하위 태그들을 플렉스 아이템 이라고 한다.
+     주축 : 아이템들이 배치되는 방향이 주축이다. 주축의 방향으로 아이템이 배치, 정렬된다.
+     교차축 : 주축을 교차하는 축을 교차축이라고 한다. 교차축으로 아이템을 정렬 시킬 수 있다.
+-->
