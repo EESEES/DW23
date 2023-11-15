@@ -1,0 +1,105 @@
+<!-- javascript.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 논리 연산자
+        // 참과 거짓을 연산하는 연산자 
+        // and(&&), or(::), not(!)
+
+        // 야바위 만들기
+        // 종이컵이 세 개가 있다. 세 개의 종이컵 중 한 군데에만 주사위가 들어있다.
+        // 주사위가 들어있는 종이컵을 맞추면 2배
+        // 주사위 위치도 맞추고 주사위 값도 맞추면 6배
+        // 주사위는 4면체이다.
+
+        // var dealer = parseInt( Math.random()*3)+1;
+        // var dice = parseInt(Math.random()*4)+1;
+
+        // var user_cup = parseInt(prompt("몇번째 종이컵 선택"));
+        // var user_dice = parseInt(prompt("주사위 값은?"));
+
+        // // (dealer == user_cup) ? "2배" : "꽝" ;
+
+    
+        // // (dice == user_dice) ? "6배" : "꽝" ;
+        
+        // var result = ( dealer == user_cup && dice == user_dice) ? "6배" : (dealer ==user_cup) ? "2배" : "꽝" ;
+        // console.log(result);
+
+        
+        // // 가위 바위 보 
+        // // 1. 가위 2. 바위 3. 보
+
+        // var com = parseInt(Math.random()*3)+1;
+        // var user = parseInt(prompt("1.가위 2.바위 3.보"));
+
+        // var result = (com==user) ? "draw" : (com==1 && user==2) || (com==2 && user==3) || (com==3 && user==1) ? "win" : "defeat" ;
+
+        // console.log(result);
+
+
+        // document.write("<div class=red></div>");
+        // 문자열 비교하기는 a === "사각형"
+        // 1. 사각형의 색상을 입력 하세요 ( 빨강, 노랑, 파랑 )
+        // 2. 크기를 입력하세요 ( 1, 2, 3 ) 1- 100,100  2- 200,200  3- 300,300
+
+
+//        var color = prompt("사각형 색상 입력(빨강, 노랑, 파랑)");
+//        var size = prompt("크기 입력 (1, 2, 3)");
+       
+//        var className = (color==="빨강" && size==="1") ? "red one" :
+//        (color==="빨강" && size==="2") ? "red two" :
+//        (color==="빨강" && size==="3") ? "red three" :
+//        (color==="파랑" && size==="1") ? "blue one" :
+//        (color==="파랑" && size==="2") ? "blue two" :
+//        (color==="파랑" && size==="3") ? "blue three" :
+//        (color==="노랑" && size==="1") ? "yellow one" :
+//        (color==="노랑" && size==="2") ? "yellow two" :
+//        (color==="노랑" && size==="3") ? "yellow three" : "";
+
+//        document.write(`<div class='${className}'></div>`);
+
+        // 놀이기구 탑승 조건 키가 130 이상
+        var tall=150;
+        if (tall >=130){
+            document.write("탑승가능");
+            console.log("탑승가능");
+        }else{
+            document.write("탑승불가");
+            console.log("탑승불가능");
+        }
+    
+
+        // 두개의 정수를 입력받아 가장 작은 숫자만 출력
+        var num1 = parseInt(prompt("첫번째 정수"));
+        var num2 = parseInt(prompt("두번째 정수"));
+        if( num1 < num2 ){
+            document.write(num1);
+
+        }else{
+            document.write(num2);
+        }
+
+        // prompt("다음 추가 등록을 하시겠습니까?(y/n)")
+        // y 입력시 - 추가등록을 시작합니다. 출력
+        // n 입력시 - 등록을 종료합니다. 출력
+        // 대소문자 모두 인식하도록 만들기
+
+//     </script>
+<!-- // <style>
+//    .red{background: red;}
+//    .yellow{background: yellow;}
+//    .blue{background: blue;}
+//    .one{width: 100px;height: 100px;}
+//    .two{width: 200px;height: 200px;}
+//    .three{width: 300px;height: 300px;}
+// </style> -->
+</head>
+<body>
+    
+</body>
+</html>

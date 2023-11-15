@@ -1,0 +1,45 @@
+<!-- javascript.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    // var dice1 = num1;
+    // var dice2 = num2;
+
+    // var num1 = (Math.random()*6)+1;
+    // var num2 = (Math.random()*6)+1;
+    
+    // var result = ( num2 > num1 ) ? "승리" : "패배" ;
+    // var result = ( num1 == num2 ) ? "비김!" : result;
+    
+    // console.log("두 주사위 중 큰 주사위 값은 : " +result);
+
+    // 1. 소주 한 잔을 마시면 수명이 2분 단축 된다. 어떤 사람이 소주를 매일 같은 양으로 20년을 마셨다. 이 사람이 하루에 몇잔의 소주를 마시는지 입력 받기.
+    //    총 단축된 수명이 몇 분 인가? / 총 단축된 수명이 몇 시간인가? (정수만 출력) / 총 단축된 수명이 며칠인가? (정수만 출력)
+
+    // var so1 = parseInt(prompt("하루에 마시는 소주의 양"));
+    // var dr = so1*2;
+
+    // var min = dr*60;
+
+    // 3. 
+
+    var time = parseInt(prompt("주차시간"));
+    var cost = 1000;
+    // 15 - 30 -> -15/10 -> -1.5 -> -1
+
+    cost = (time >= 120 )? 1500 : cost;
+
+    time = (time >=120) ? time-120 : (time>=30) ? time-30: 0;
+    var price = parseInt((time)/10) * 100 + cost;
+    console.log(`주차요금 : ${price}원`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
