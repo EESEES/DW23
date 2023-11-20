@@ -1,0 +1,134 @@
+<!-- script_for.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1120st</title>
+
+    <script>
+        // 반복문 - 특정 코드들을 주어진 조건 동안 반복적으로 실행 시킨다.
+        // 반복문에도 조건식을 작성한다.
+        // 조건식이 참일 경우에는 반복 실행할 코드들이 동작하고 조건식이 거짓이 되는 순간 즉시 반복문은 종료 된다.
+        // 반복문을 작성할 때 몇번을 반복해야 하는지 잘 생각하고 조건을 완성해야한다.
+        
+        // for( 초기값; 조건식; 증감식 )
+        // for(var i=1; i<=10; i++){ // ; 두개는 반드시 작성해야 한다.
+            // document.write(i + "<br>");
+        // }
+        // for(var i=1; i<=9; i++){
+        //     document.write(`2 *${i} = ${2*i}<br>`); //백틱
+        // }
+            
+        // var row=parseInt(prompt("테이블 몇줄"));
+        // var col=parseInt(prompt("테이블 몇칸"));
+        
+        // var table="<table>";
+
+        // for(var i=1; i<=row; i++){
+        //     table += "<tr>";
+        //     for(var k=1; k<=col; k++){
+        //         var num = (i-1)*col+k;
+        //         if(k%2 == 1)
+        //             table += "<td style='background-color=red'>"+(num)+"</td>";
+        //         else
+        //             table += "<td>" + (num) + "</td>";
+        //     }
+        //     table += "</tr>";
+        // }
+        // table +="</table>";
+        // document.write( table );
+
+
+        // 반복문의 무한 반복 
+
+        // for (; true;){
+        //     var uum = prompt("정수입력");
+        //     if (num === "0"){
+        //         break;
+        //     }
+        
+        //     document.write("무한 반복");
+        // }
+
+
+        // 무한루프 안에서 랜덤값 구하기 (랜덤 범위 : 1~100)
+        // 랜덤값이 7의 배수일 경우에 반복문을 중단하기
+        // 반복문이 끝날때까지 나온 랜덤값은 출력하기
+
+        // for (; true;){
+        //     var num = Math.floor(Math.random()*100)+1;
+        //     document.write(num+"<br>");
+        //     if(num%7==0) break;
+        // }
+
+        // var age = 0;
+        // for(;age<20;){
+        //     age = parseInt(prompt("나이 입력"));
+        // }
+        // var birth_year = 2023-age;
+        // var count=0;
+        // for(;true;){
+        //     var year = Math.floor(Math.random()*54)+1950;
+        //     count++;
+        //     if (year == birth_year) break ; 
+        // }
+        // document.write(count+"번 만에 나왔다.");
+
+        // var com = Math.floor(Math.random()*50)+1 ;
+        
+        // for(; ture;){
+        //     var user = parseInt(prompt("업다운 게임"));
+        //     if (user > com){
+        //         alert("다운");
+        //     }
+        //     if(user<com){
+        //         alert("업");
+        //     }
+        //     if(user==com){
+        //         alert("정답");
+        //         break;
+        //     }
+        // }
+
+
+
+        // var word ="international prototype";
+        // // 지정한 알파벳의 갯수가 몇개인지 구하기
+        // var alp="o";
+        // var count=0;
+        // for(var i=0; i< word.length; i++){
+        //     if( word.charAt(i) === alp) 
+        //         count++;
+        // }
+        // document.write(`${alp}알파벳은 총 ${count}개 있다.`);
+
+        for(var i=1; i<100; i++){
+            if( i&3 == 0 && i%10==0 ){
+                document.write("<div>pizzle buzzle</div>");
+            
+            }else if(i%3==0){            
+                document.write("<div>pizzle</div>");   
+            }else if(i%10==0){
+                document.write("<div>buzzle</div>");
+            }else
+                document.write(i+"   ");
+        }
+
+    </script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table tr td{
+            border:1px solid black;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
