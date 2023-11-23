@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    // // window.onload=function(){}
+    // $(function(){
+    //    var box = document.getElementsByClassName("box");
+    //    for(var i=0; i<box.length; i++){
+    //     box[i].innerHTML = Math.floor(Math.random()*100)+1;
+    //     box[i].addEventListener("onmouseover", function(){
+    //         box[i].style.color=black;
+    //     });
+    //    } 
+    // });
+
+    // alert( $(".box").length);
+
+    // for(var i=0; i<$(".box").length; i++){
+    //     $(".box").eq(i).html(Math.floor(Math.random()*100)+1);
+    // }
+    $(function(){
+
+    $.each( $(".box"), function(){
+        $(this).html(Math.floor(Math.random()*100)+1);
+    });
+
+    $(".box").on("click", function(){
+        $(".box").css("background","white");
+        $(this).css("background","red");
+        alert( $(this).text());
+    });
+
+    $(".box").on("mouseover", function(){
+        $(this).css("font-size","40px");
+    });
+});
+
+</script>
+
+<style>
+    #wrap{
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .box{
+        width: 25%;
+        height: 200px;
+        border: 1px solid black;
+    }
+</style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>    
+</body>
+</html>
