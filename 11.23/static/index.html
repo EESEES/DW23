@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    const name=["주현상", "윤대경", "이민우", "이태양", "페냐", "박상원", "장시환"];
+    const era=[1.96, 2.45, 3.23, 3.60, 3.65, 3.38];
+
+    var total=0;
+    for(var i=0; i<era.length; i++){
+        total += era[i];
+    }
+    var avg = total/era.length;
+
+    for(var i=0; i<name.length; i++){
+        if(avg <= era[i]){
+            document.write(name[i]="   ");
+        }
+    }
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
